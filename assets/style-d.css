@@ -30,8 +30,12 @@ header {
 
 /* CONTENT */
 main {
-    background-color: rgb(143, 166, 187);
-}
+    background-color: #354463;
+    padding-bottom: 2rem;
+    background-image: url(./donation/annie-spratt-427340-unsplash.png); 
+    background-size: cover;
+    background-position-x: 50%;
+  }
 main > div {
     width: 80%;
     color: white;
@@ -42,24 +46,27 @@ main > div {
   font-size: 1.6rem;
   text-align: center;
   margin: auto;
+  padding: 1rem 0 1.5rem 0;
 }
 .content_cont {
-    width: 80%;
+    width: 84%;
     background-color: #354463;
     margin: auto;
+    display: grid;
+    grid-template-rows: 3fr 2fr 3fr;
+    /* grid-auto-rows: minmax(0, 1fr) ; */
 }
 .content_cont > div {
     width: 80%;
     margin: auto;
-    padding-top: 1rem;
 }
 .info-header {
   line-height: 3rem;
   font-weight: 700;
   font-size: 1.1rem
 }
-.p-info > div, .card-info > div {
-  /* margin-top: 1rem; */
+.p-info {
+  padding-top: 1rem;
 }
 label {
   position: relative;
@@ -68,7 +75,8 @@ label {
   left: 0.2rem;
   color: #888888;
   transition-property: left, top, color;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
   /* cursor: pointer; */
   /* animation-name: label-anim; 
   animation-duration: 3s; */
@@ -90,7 +98,7 @@ top: 0rem;
 } */
 
 input {
-  /* width: auto; */
+  width: 100%;
   z-index: 1;
   padding: 0.2rem;
   border: none;
@@ -100,12 +108,17 @@ input {
   /* pointer-events: none; */
   /* cursor: text; */
 }
+.half {
+  width: 90%;
+}
 input:focus ~ label
-/* input:valid ~ label */{
+/* input:valid ~ label*/{
   left: 0rem;
   top: -2.5rem;
   font-size: 0.7rem;
   color: white;
+  /* font-weight: 600; */
+  text-transform: uppercase;
 }
 
 /* no input box highlight when focussed */
@@ -117,7 +130,70 @@ input:focus{
   justify-content: space-between;
 }
 .name > div {
-  width: 45%;
+  width: 46.5%;
+}
+.addr {
+  display: flex;
+  justify-content: space-between;
+}
+.addr  .city{
+  width: 46.5%;
+}
+.addr .state {
+  width: 19.75%;
+}
+.addr .zip {
+  width: 19.75%;
+}
+.card-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.exp {
+  display: flex;
+  width: 46.5%;
+  height: 3rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.code {
+  width: 46.5%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.code p {
+  font-size: 0.7rem;
+  padding-bottom: 0.52rem;
+}
+.exp p {
+  font-size: 0.7rem;
+}
+.exp_txt {
+  width: 40%;
+}
+.button {
+  cursor: pointer;
+  color: #354463;
+  width: 100%;
+  background-color: #c1f7d5;
+  padding: 0.5rem 0.7rem;
+  font-size: 0.9rem;
+  border: 0 solid transparent;
+  border-radius: 2rem;
+  font-weight: 800;
+  text-align: center;
+  line-height: 1.8rem;
+  margin: 1.5rem 0;
+}
+.confirm-payment {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.confirm-payment .text {
+  font-weight: 700;
 }
 
 /* FOOTER */
@@ -152,3 +228,184 @@ footer {
     color: white;
   }
   
+/* TABLET VIEW */
+@media screen and (min-width: 450px) {
+  /* FOOTER */
+  * {
+    font-size: 110%;
+  }
+  header {
+    font-size: 130%
+  }
+  .content_header {
+    font-size: 3rem;
+    line-height: 3rem;
+    padding: 3rem 0;
+  }
+  .content_cont {
+    grid-template-rows: 3fr 2fr 2fr;
+  }
+  .info-header {
+    font-size: 100%;
+    padding-bottom: 1rem;
+  }
+  .exp_txt {
+    width: 35%;
+  }
+  .exp p, .code p {
+    font-size: 90%;
+    padding-right: 10%;
+  }
+  .exp, .code {
+    font-size: 70%;
+    height: auto;
+  }
+  label {
+    font-size: 1.3rem;
+    top: -3rem;
+  }
+  input:focus ~ label
+  /*,input:valid ~ label*/ {
+    top: -5rem;
+    font-size: 1.1rem;
+  }
+  .code p {
+    padding-bottom: 0;
+  }
+  .confirm-payment {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+  }
+  .button {
+    width: 15rem;
+    order: 1;
+    margin-top: 3.5rem;
+    font-size: 90%;
+    padding: 1rem 0.7rem
+  }
+  .home {
+    margin-top: 4.5rem;
+    font-size: 70%;
+  }
+  .text {
+    font-size: 115%;
+  }
+
+  /* FOOTER */
+  footer {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+    margin: 3rem 2rem;
+  }
+  footer .head {
+    font-size: 160%;
+    align-self: center;
+  }
+  footer .contact {
+    align-self: center;
+    font-size: 80%;
+    justify-self: center;
+  }
+  footer .follow {
+    align-self: center;
+    font-size: 80%;
+    justify-self: start;
+  }
+  footer .learn {
+    grid-area: 2/2/3/3;
+    font-size: 80%;
+    justify-self: center;
+  }
+  footer .hashtag {
+    grid-area: 2/3/3/4;
+    text-align: left;
+    font-size: 350%;
+  }
+}
+
+/* DESKTOP VIEW */
+@media screen and (min-width: 900px) {
+
+  * {
+    font-size: 107%;
+  }
+  .content_header {
+    font-size: 4rem;
+    line-height: 4.2rem;
+    text-align: left;
+  }
+  main {
+    display: flex;
+    background-size: cover;
+  }
+  .p-info {
+    margin: auto;
+  }
+  .card-info {
+    margin:auto;
+  }
+  .info-header {
+    font-size: 1.5rem;
+    padding: 2rem 0;
+  }
+  .pay-head {
+    padding-top: 0;
+  }
+  .content_cont {
+    order: -1;
+    width: 42vw;
+    margin: 4rem 4rem 4rem 9rem;
+  }
+  .content_header {
+    align-items: flex-start;
+    margin: 0;
+    width: 30vw;
+  }
+  label {
+    font-size: 70%;
+  }
+  .button {
+    padding: 0.8rem 0.7rem;
+  }
+  .text {
+    font-size: 105%;
+  }
+  .confirm-payment {
+    margin-top: 100%;
+  }
+
+  /* FOOTER */
+  footer {
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 2fr 1fr;
+    padding: 5% 8%;
+    padding-bottom: 0;
+    grid-column-gap: 2rem;
+    margin: 0 auto;
+  }
+  footer .head {
+    grid-area: 1/1/2/2;
+    justify-self: start;
+  }
+  footer .contact {
+    grid-area: 1/2/2/3;
+    justify-self: end;
+  }
+  footer .follow {
+    grid-area: 1/3/2/4;
+    justify-self: center;
+  }
+  footer .learn {
+    grid-area: 1/4/2/5;
+    justify-self: start;
+    align-self: center;
+  }
+  footer .hashtag {
+    grid-area: 1/5/2/6;
+  }
+}
+
