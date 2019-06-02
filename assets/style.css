@@ -72,10 +72,9 @@ header .head {
 } */
 
 .button {
-  /* font-weight: 800; */
+  cursor: pointer;
   color: #354463;
   width: 100%;
-  /* justify-self: stretch; */
   background-color: #c1f7d5;
   padding: 0.5rem 0.7rem;
   font-size: 1.1rem;
@@ -511,7 +510,6 @@ footer {
   color: #354463;
   font-size: 80%;
   justify-items: center;
-  /* align-items: center; */
 }
 footer .head {
   font-size: 1.1rem;
