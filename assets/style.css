@@ -1,7 +1,3 @@
-/* 
-CONTENTS
-
-1.headerER */
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap");
 @font-face {
@@ -19,8 +15,8 @@ CONTENTS
 }
 
 .blu-hd_mod {
-  font-size: 0.8rem;
-  width: 9rem;
+  font-size: 1.5vw;
+  width: 13vw;
   height: 2.5rem;
   position: absolute;
   background-color: #354463;
@@ -39,11 +35,8 @@ a {
 
 header {
   margin: 2em;
-  /* width: auto;
-  height: auto; */
   display: grid;
   grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
-  /* grid-column-gap: 2.7em; */
   grid-row-gap: 2em;
   align-items: center;
   font-family: "Open Sans", sans-serif;
@@ -53,7 +46,6 @@ header {
 .header-left {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  /* grid-gap: 0.6rem; */
   align-items: center;
 }
 .header-left > nav {
@@ -65,11 +57,6 @@ header .head {
   font-weight: 700;
   line-height: 1.1rem;
 }
-/* header > :nth-child(even) {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.5em;
-} */
 
 .button {
   cursor: pointer;
@@ -101,23 +88,21 @@ header .head {
 }
 .the-issue {
   background-color: #ffffff;
-  /* height: 12rem; */
   grid-row: 2/3;
   text-align: center;
   padding: 6%;
-  /* padding-top: 2em; */
   color: #354463;
   position: relative;
   display: grid;
   grid-template-rows: 1fr 6fr 4fr;
-  /* flex-direction: column; */
   justify-items: center;
   align-items: center;
-  /* justify-content: space-around; */
 }
 .the-issue .the-issue-head {
   top: -11%;
   left: 25%;
+  width: 40vw;
+  font-size: 4vw;
 }
 
 .the-issue-content {
@@ -125,16 +110,11 @@ header .head {
   font-size: 1.2rem;
   font-weight: 700;
   padding-bottom: 0.7rem;
-  /* flex-grow: 1; */
-  /* padding-bottom: 8%; */
 }
 .the-issue-link {
-  /* width: 100%; */
   grid-area: 3/1/4/2;
   font-size: 0.75rem;
   padding: 0 1rem;
-  /* flex-grow: 1; */
-  /* align-self: left; */
 }
 .hashtag {
   font-family: "flood", sans-serif;
@@ -156,6 +136,8 @@ header .head {
 .action-head {
   left: 30%;
   top: -8.5%;
+  width: 40vw;
+  font-size: 4vw;
 }
 #action h3 {
   font-family: "Open Sans", sans-serif;
@@ -177,38 +159,28 @@ header .head {
   font-family: "Open Sans", sans-serif;
   background-color: #354463;
   display: grid;
-  /* grid-row-gap: %; */
-  /* grid-template-rows: ; */
-  /* justify-content: space-around; */
-  /* align-items: center; */
   justify-items: center;
-  /* padding-top: 0; */
 }
 #what-we-do > div {
-  /* height: 4%; */
   width: 80%;
 }
 #what-we-do .head {
-  font-size: 0.8rem;
-  width: 48%;
+  font-size: 1.2vw;
   height: 2.5rem;
-  /* position: initial; */
   background-color: white;
   color: #354463;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 40vw;
+  font-size: 4vw;
 }
 #what-we-do .header {
-  /* height: 50vh;  */
   display: grid;
   grid-template-rows: 1fr 4fr;
-  /* flex-direction: column; */
   justify-items: center;
-  /* align-items: center; */
   font-size: 130%;
   padding-top: 12%;
-  /* grid-gap: 10%; */
 }
 #what-we-do .head-content {
   font-weight: 700;
@@ -220,21 +192,16 @@ header .head {
   height: 170vh;
   color: #354463;
   display: grid;
-  /* justify-content: space-evenly; */
-  /* justify-content: space-around; */
   grid-row-gap: 5em;
-  /* align-items: center; */
   font-size: 90%;
   padding-top: 0;
 }
 .what-we-do_cont > div {
-  /* height:30em; */
   position: relative;
   background-color: white;
 }
 .what-we-do_img {
   width: 80%;
-  /* height: 60%; */
   position: absolute;
   top: -15%;
 }
@@ -267,7 +234,6 @@ header .head {
   grid-template-rows: 1fr 4fr;
   justify-items: center;
   font-family: "Open Sans", sans-serif;
-  /* background-color: rgb(174, 196, 188); */
   background-image: url("./home/did-you-know-background.jpeg");
   background-size: auto 129%;
   background-position: 45% 100%;
@@ -301,7 +267,6 @@ header .head {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   margin-bottom: 5%;
-  /* justify-items: space-around; */
 }
 .fact_cont_head {
   justify-self: center;
@@ -309,6 +274,8 @@ header .head {
   left: 26%;
   top: -3%;
   font-size: 90%;
+  width: 40vw;
+  font-size: 4vw;
 }
 .fact_card {
   height: 89%;
@@ -355,18 +322,16 @@ header .head {
   font-family: "Open Sans", sans-serif;
   padding-bottom: 5%;
   grid-gap: 5%;
-  /* align-items: center; */
 }
 .stories > * {
   width: 80%;
-}
-.stories_img {
 }
 .stories_hd {
   position: relative;
   margin: 0;
   top: 125%;
-  width: 40%;
+  width: 40vw;
+  font-size: 4vw;
 }
 .stories_cont {
   background-color: #354463;
@@ -400,8 +365,6 @@ header .head {
   height: 250vh;
   display: grid;
   grid-template-rows: minmax(0, 2fr) minmax(0, 5fr) minmax(0, 5fr);
-  /* grid-gap: 5%; */
-  /* padding: 5% 0%; */
   justify-items: center;
   align-items: center;
   font-family: "Open Sans", sans-serif;
@@ -420,7 +383,6 @@ header .head {
   padding: 0;
 }
 .events_card, .news_card{
-  /* background-color: #d6c7c1; */
   display: grid;
   height: 100%;
   justify-content: space-around;
@@ -433,11 +395,10 @@ header .head {
   top: 70%;
   background-color: white;
   color: #354463;
-  font-size: 90%;
-  /* width: 40%; */
+  width: 40vw;
+  font-size: 4vw;
 }
 .events_img,.news_img{
-  /* object-fit: fill; */
   width: 100%;
 }
 .card-btn {
@@ -454,7 +415,6 @@ header .head {
   color: white;
   font-size: 80%;
   width: 90%;
-  /* justify-self: center; */
 }
 
 /* SUBSCRIBE */
@@ -465,7 +425,6 @@ header .head {
   grid-template-columns: 3fr 2fr;
   font-family: "Open Sans", sans-serif;
   padding: 8%;
-  /* grid-row-gap: 10%; */
 }
 .subs_btn {
   background-color: #354463;
@@ -525,7 +484,7 @@ footer .hashtag {
 
 /* TABLET VIEW */
 
-@media screen and (min-width: 500px) and (max-width: 769px) {
+@media screen and (min-width: 500px) and (max-width: 900px) {
   .blu-hd_mod_tab {
     position: absolute;
     height: 2.5rem;
@@ -536,13 +495,11 @@ footer .hashtag {
   header {
     grid-template-rows: 1fr;
     grid-template-columns: 2fr 1fr;
-    /* grid-gap: 4rem; */
     justify-content: center;
   }
   .header-left {
     grid-template-columns: 1fr;
     grid-template-rows: 1.2fr 1fr;
-    /* justify-content: center; */
     grid-row-gap: 1rem;
   }
   header .head {
@@ -558,54 +515,46 @@ footer .hashtag {
     flex-grow: 1;
   }
   header > .button {
-    /* height: 3rem; */
     width: 1rem;
     border-radius: 2.5rem;
   }
   header > :nth-child(even) {
-    grid-area: ;
     font-size: 1rem;
   }
 
   /* ISSUE */
   #issue {
-    height: 70vh;
-    background-size: 180%;
+    background-size: auto 140%;
     background-position-x: 18%;
-    grid-template-rows: 2fr 3fr;
+    grid-template-rows: 3fr 8fr;
+    grid-gap: 12vw;
     align-items: center;
     justify-items: center;
   }
-  /* .the-issue {
-    margin: 0;
-    padding: 0;
-  } */
   #issue div {
     margin: 0;
     padding: 0;
     width: 80%;
-    height: 70%;
+    height: 80%;
   }
   #issue > .hashtag {
-    /* align-self: flex-start; */
-    /* justify-self: flex-start; */
     width: 30%;
     padding-right: 50%;
+    font-size: 6vw;
   }
   .the-issue {
-    /* margin: 2%; */
-    /* position: relative; */
     height: auto;
     text-align: left;
     justify-content: flex-end;
-    /* align-items: flex-start; */
   }
   .the-issue-content {
     padding: 0;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 5vw;
+    line-height: 6vw;
   }
-  .the-issue-link {
+  .the-issue-link > a {
+    padding-top: 2vw;
   }
   #issue .the-issue-head {
     position: absolute;
@@ -615,17 +564,22 @@ footer .hashtag {
     left: 10%;
   }
   .hashtag {
-    /* justify-items: center; */
     font-size: 300%;
     line-height: 100%;
   }
 
   /* ACTION */
   #action {
-    font-size: 120%;
     padding: 0;
     grid-gap: 0;
     height: 33vh;
+  }
+  #action h3 {
+    font-size: 3vw;
+    line-height: 4vw;
+  }
+  #action p {
+    font-size: 2.8vw;
   }
   .action-content {
     padding: 0;
@@ -634,8 +588,6 @@ footer .hashtag {
     align-content: center;
     justify-items: center;
     grid-gap: 2rem;
-    /* align-items: center; */
-    /* justify-content: space-around; */
   }
   .action-content div {
     height: 44%;
@@ -648,7 +600,7 @@ footer .hashtag {
   /* WHAT WE DO */
   #what-we-do {
     grid-template-rows: 1fr 5fr;
-    height: 150vh;
+    height: auto;
   }
   .what-we-do_cont {
     grid-row-gap: 0;
@@ -676,15 +628,16 @@ footer .hashtag {
     height: 16rem;
     padding-top: 0;
     justify-items: end;
+    margin-top: 6rem;
   }
   .what-we-do_img {
     grid-area: 1/1/3/2;
     width: 100%;
-    top: -25%;
+    top: -15%;
   }
   .what-we-do_card h3 {
     grid-area: 1/2/2/3;
-    font-size: 150%;
+    font-size: 140%;
     padding: 13%;
   }
   .what-we-do_card p {
@@ -694,22 +647,18 @@ footer .hashtag {
     text-align: left;
     padding-top: 0;
     font-size: 120%;
-    /* font-weight: 100; */
   }
   .what-we-do_card a {
     grid-area: 2/1/4/2;
-    font-size: 140%;
     font-weight: 700;
-    align-self: right;
-    width: 50%;
-    /* justify-items: top; */
+    width: 53%;
+    margin-top: 2.5rem;
   }
 
   /* FACT */
   .fact {
     grid-template-columns: 2fr 3fr;
     grid-template-rows: 1fr;
-    /* align-items: center; */
     padding: 8%;
     height: 65vh;
     background-size: auto 145%;
@@ -721,7 +670,6 @@ footer .hashtag {
   }
   .fact_header div {
     grid-area: 1/1/2/2;
-    /* width: 90%; */
   }
   .fact_header a {
     grid-area: 2/1/3/2;
@@ -733,6 +681,8 @@ footer .hashtag {
   }
   .fact_cont_head {
     left: 8%;
+    width: 16vw;
+    font-size: 1.5vw;
   }
   .fact_card {
     grid-template-rows: 1fr 1fr;
@@ -751,7 +701,6 @@ footer .hashtag {
   /* STORIES */
   .stories {
     width: 83.33%;
-    /* background-color: #01461a; */
     justify-self: center;
     grid-template-rows: 1fr 5fr 2.5fr 0.5fr 1fr;
     grid-gap: 0;
@@ -794,13 +743,13 @@ footer .hashtag {
     width: 20%;
     justify-self: start;
     margin-left: 10%;
+    font-size: 100%;
   }
 
   /* EVENTS */
   .events {
     height: 120vh;
     display: block;
-    /* grid-template-rows: 1fr 5fr 5fr;  */
     position: relative;
   }
   .events_header {
@@ -810,7 +759,6 @@ footer .hashtag {
   }
   .events_card, .news_card {
     height: auto;
-    /* background-color: #ffffff; */
     display: block;
     width: 37.5%;
     text-align: left;
@@ -821,11 +769,9 @@ footer .hashtag {
   .events_card > * {
     margin: 8% 0;
     font-size: 100%;
-    /* margin-top: 10%; */
   }
   .news_card {
     height: auto;
-    /* background-color: #ffffff; */
     display: block;
     width: 37.5%;
     text-align: left;
@@ -836,7 +782,6 @@ footer .hashtag {
   .news_card > * {
     margin: 8% 0;
     font-size: 100%;
-    /* margin-top: 10%; */
   }
   .events_img {
     position: absolute;
@@ -903,7 +848,7 @@ footer .hashtag {
   }
 }
 
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 900px) {
   .blu-hd_mod {
     height: 2rem;
   }
@@ -927,7 +872,6 @@ footer .hashtag {
     width: 50%;
     display: flex;
     justify-content: space-around;
-    justify-self: 
   }
   .nav-top > * {
     font-size: 140%;
@@ -944,20 +888,16 @@ footer .hashtag {
   #issue {
     height: 46vw;
     display: flex;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
     background-image: url("./home/annie-spratt-135307-unsplash@3x.png");
     background-size: 100% auto;
     align-items: center;
-    justify-items: center;
-    /* margin: 10%; */
-    /* background-position: -10%; */
-    /* padding: 0 10%; */
+    justify-items: space-around;
   }
   #issue > div {
     margin: 9rem;
-    width: 25rem;
-    height: 17rem;
+    margin-right: 8vw;
+    width: 30%;
+    height: 50%;
   }
   .the-issue {
     grid-area: 1/1/2/2;
@@ -966,16 +906,15 @@ footer .hashtag {
     padding: 3% ;
     text-align: left;
     justify-items: start;
-    /* width: 200px; */
-    /* margin: 10%; */
-    /* font-size: 100%; */
   }
   .the-issue .the-issue-head {
     top: -4.5%;
     left: 9%;
+    width: 10vw;
+    font-size: 1.2vw;
   }
   .the-issue-content {
-    font-size: 2.4rem;
+    font-size: 3vw;
   }
   #issue .hashtag {
     font-size: 400%;
@@ -986,10 +925,9 @@ footer .hashtag {
     padding-top: 9%; 
   }
   .the-issue-link {
-    font-size: 90%;
+    font-size: 1vw;
     display: flex;
     align-items: center;
-    /* justify-s: center; */
   }
 
   /* ACTION */
@@ -997,15 +935,16 @@ footer .hashtag {
     left: 45%;
     top: -9%;
     height: 2.5rem;
-    font-size: 0.9rem;
+    font-size: 1.4vw;
+    width: 10vw;
+    font-size: 1.2vw;
   }
   .action-content {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 0;
-    font-size: 1.2rem;
+    font-size: 2.2vw;
     justify-items: center;
     align-items: center;
-    height: 8rem;
   }
   .action-content > div {
     width: 78%;
@@ -1017,7 +956,6 @@ footer .hashtag {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: space-between */
   }
   #what-we-do > div {
     width: 80%;
@@ -1029,16 +967,17 @@ footer .hashtag {
     padding-bottom: 8rem;
   }
   #what-we-do .head {
-    width: 10rem;
+    width: 10vw;
+    font-size: 1.2vw;
   } 
   #what-we-do .head-content {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: left;
     padding-top: 2rem;
   }
   .what-we-do_cont {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 10%;
     font-size: 100%;
   }
@@ -1047,10 +986,8 @@ footer .hashtag {
     display: block;
     width: 13rem;
     padding: 0 3%;
-    /* padding-top: 0; */
   }
   .what-we-do_card > * {
-    /* font-size: 120%; */
     text-align: left;
     padding-bottom: 1rem;
   }
@@ -1058,7 +995,6 @@ footer .hashtag {
     position: relative;
     width: 130%;
     margin-top: -2rem;
-    /* top: 10%; */
   }
   .what-we-do_card > p {
     text-align: left;
@@ -1071,8 +1007,6 @@ footer .hashtag {
     font-size: 100%;
    font-weight: 700;
    border-radius: 1.5rem;
-   /* width: 10px; */
-   /* width: 80%; */
   }
   .what-we-do_card h3 {
     font-size: 150%;
@@ -1080,17 +1014,12 @@ footer .hashtag {
 
   /* FACT */
   .fact {
-    height: 65rem;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
     justify-items: start;
-    /* align-items: center; */
     background-image: url("./home/did-you-know-background@3x.png");
-    background-size: 100% auto;
+    background-size: cover;
     background-position-y: 50%;
-  }
-  .fact > div {
-    /* width: 60%; */
   }
   .fact_header {
     display: block;
@@ -1099,8 +1028,8 @@ footer .hashtag {
   }
   .fact_header div {
     padding-bottom: 3rem;
-    font-size: 400%;
-    line-height: 4rem;
+    font-size: 5.5vw;
+    line-height: 6vw;
     width: 70%;
   }
   .fact_cont {
@@ -1117,13 +1046,16 @@ footer .hashtag {
   .fact_cont_head {
     left: 10%;
     top: -1.9%;
+    width: 12vw;
+    font-size: 1.2vw;
+    height: 3vw;
   }
   .fact_card h3 {
-    font-size: 230%;
+    font-size: 3vw;
   }
   .fact_card p {
     align-self: start;
-    font-size: 110%;
+    font-size: 1.2vw;
   }
 
   /* STORIES */
@@ -1132,28 +1064,17 @@ footer .hashtag {
     grid-template-rows: 1fr 1fr 3fr 1fr 1fr;
     grid-template-columns: 1fr 3fr 3fr 1fr;
     grid-gap: 0;
-    /* flex-direction: row; */
     height: auto;
     position: relative;
     padding: 0;
-    /* padding: 0 15%; */
-    /* flex-wrap: wrap; */
-    /* justify-content: space-around; */
-    /* align-items: center; */
-  }
-  .stories > div {
-    /* margin: 5%; */
   }
   .stories_img {
-    /* padding:15% 0; */
-    /* padding-left: 30%; */
     grid-area: 2/2/5/4;
     width: 55.5%;
     justify-self: end;
   }
   .stories_cont {
     width: 100%;
-    /* margin-top: -10%; */
     grid-area: 3/2/4/3;
     text-align: left;
     font-size: 130%;
@@ -1183,15 +1104,12 @@ footer .hashtag {
   .events > * {
     padding: 0;
     padding-bottom: 15%;
-    /* padding-bottom: 4%; */
   }
   .events_header {
     font-size: 4rem;
     line-height: 4rem;
     text-align: left;
     padding: 0;
-    /* padding-top: 6%;
-    padding-bottom: 8%; */
   }
   .events_card {
     display: flex;
