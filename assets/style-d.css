@@ -85,7 +85,6 @@ label {
 }
 input {
   width: 100%;
-  z-index: 1;
   padding: 0.2rem;
   border: none;
   border-bottom: solid 1.5px #c1f7d5;

@@ -599,7 +599,7 @@ footer .hashtag {
 
   /* WHAT WE DO */
   #what-we-do {
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 3.5fr;
     height: auto;
   }
   .what-we-do_cont {
@@ -939,12 +939,15 @@ footer .hashtag {
     width: 10vw;
     font-size: 1.2vw;
   }
+  #action h3 {
+    font-size: 2.2vw;
+  }
   .action-content {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 0;
-    font-size: 2.2vw;
+    font-size: 2vw;
     justify-items: center;
-    align-items: center;
+    align-items: start;
   }
   .action-content > div {
     width: 78%;
@@ -1045,7 +1048,7 @@ footer .hashtag {
   }
   .fact_cont_head {
     left: 10%;
-    top: -1.9%;
+    top: -1.4vw;
     width: 12vw;
     font-size: 1.2vw;
     height: 3vw;
@@ -1077,7 +1080,7 @@ footer .hashtag {
     width: 100%;
     grid-area: 3/2/4/3;
     text-align: left;
-    font-size: 130%;
+    font-size: 1.5vw;
   }
   .stories_hd {
     grid-area: 1/3/2/4;
@@ -1092,6 +1095,7 @@ footer .hashtag {
     align-self: end;
     justify-self: start;
     width: 25%;
+    font-size: 1.6vw;
   }
 
   /* EVENTS */
@@ -1138,6 +1142,7 @@ footer .hashtag {
   .events_img {
     width: 50%;
     order: -1; 
+    padding-bottom: 9vw;
   }
   .news_img {
     width: 50%;
@@ -1146,11 +1151,13 @@ footer .hashtag {
   }
   .events_card > .card-hdr {
     position: static;
-    width: 14%;
+    width: 14vw;
+    font-size: 1.7vw;
   }
   .news_card > .card-hdr {
     position: static;
-    width: 14%;
+    width: 14vw;
+    font-size: 1.7vw;
   }
   .events_card > div , .news_card > div {
     width: 39%;
