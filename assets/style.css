@@ -440,13 +440,20 @@ header .head {
 .subs_input {
   grid-area: 2/1/3/2;
   width: 85%;
+  color: #354463;
+  border: none;
   background-color: white; 
   font-size: 80%;
   font-weight: 200;
   align-self: center;
   justify-self: start;
+  padding: 0.4rem 0.7rem;
   border-radius: 1.5rem;
   height: 1.5rem;
+}
+::placeholder {
+  color: #354463;
+  font-size: 0.8rem
 }
 .subs_txt {
   grid-area: 1/1/2/3; 
@@ -755,7 +762,7 @@ footer .hashtag {
   .events_header {
     margin: 8%;
     text-align: left;
-    font-size: 300%;
+    font-size: 6vw;
   }
   .events_card, .news_card {
     height: auto;
@@ -797,9 +804,10 @@ footer .hashtag {
   }
   .card-hdr {
     top: 0;
+    width: 20vw;
   }
   .cont-head {
-    font-size: 170%;
+    font-size: 4vw;
   }
 
   /* SUBSCRIBE */
@@ -1126,7 +1134,7 @@ footer .hashtag {
     padding-bottom: 15%;
   }
   .events_header {
-    font-size: 4rem;
+    font-size: 6vw;
     line-height: 4rem;
     text-align: left;
     padding: 0;
@@ -1158,7 +1166,7 @@ footer .hashtag {
   .events_img {
     width: 50%;
     order: -1; 
-    padding-bottom: 9vw;
+    padding-bottom: 11vw;
   }
   .news_img {
     width: 50%;
